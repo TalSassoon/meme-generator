@@ -7,6 +7,26 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="js/main.js"></script>
+    
+<body onload="init()">
+
+    <header class="meme-nav-container">
+        <div class="logo">memegen</div>
+        <div class="meme-links">
+        <a href="#">Gallery</a>
+        <div class="sperator">|</div>
+        <div><a href="#">about</a>
+        </div>
+        </div>
+    </header>
+
+    <main class="main-container" >
+        <canvas id="canvas" height="450" width="450" onmousedown="myDown()"  onmouseup="myUp()"></canvas>
+        <div class="controls"><input type="text" placeholder="enter meme" onchange ="onWriteText(this.value)"></div>
+        <div class="controls"><input type="text" placeholder="enter meme" onchange ="onWriteButtomText(this.value)"></div>
+    </main>
+    
+    <script src="js/memeController.js"></script>
+    <script src="js/memeService.js"></script>
 </body>
 </html>
