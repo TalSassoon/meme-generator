@@ -32,6 +32,7 @@ var dragok = false;
 
 
 
+
 // function myMove(e){
 //  if (dragok){
 //   x = e.pageX - canvas.offsetLeft;

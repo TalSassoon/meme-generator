@@ -25,15 +25,17 @@
     <main class="main-container" >
         <canvas id="canvas" height="450" width="450" onmousedown="myDown()"  onmouseup="myUp()"></canvas>
         <div class="controls">
-        <input type="text" placeholder="enter meme" onchange ="onWriteText(this.value)">
+        <input type="text" placeholder="enter meme" class="meme-str" onchange ="onWriteText(this.value)">
         <input type="text" placeholder="enter meme" onchange ="onWriteButtomText(this.value)">
-        <div class="gallery" > 
-    
-        </div>
+        <button onclick="increaseFont()">increase</button>
+        <button onclick="decreaseFont()">decrease</button>
+        
     </div>
     </main>
-<section>
- 
+<section style="display: block;">
+    <div class="gallery" > 
+    
+    </div>
         </section>  
     <script src="js/memeController.js"></script>
     <script src="js/memeService.js"></script>
