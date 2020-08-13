@@ -26,6 +26,8 @@ canvas {
 .controls{
     margin-left: 3.125rem;
     margin-top: 1.5625rem;
+    display: flex;
+    flex-direction: column;
 }
 
 

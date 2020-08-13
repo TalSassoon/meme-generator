@@ -1,13 +1,17 @@
-* {
-    box-sizing: border-box;
+
+  section{
+      display:block;
   }
-  body{
-    margin: 0;
-  }
-  
 .gallery {
     display: grid;
+    align-self: center;
     grid-gap: 15px;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px , 200px));
+    
+
+    
   }
-  
+  .gallery a{
+      height: 200px;
+ background-size: cover;
+  }

@@ -6,8 +6,9 @@ function init() {
     drawCanvas()
 }
 function onWriteText(txt) {
-   let text = creategMeme(txt)
-    drawText(text)
+    editgMeme(txt)
+  
+    drawText(txt)
     
 }
 function onWriteButtomText(text) {
@@ -17,15 +18,17 @@ function onWriteButtomText(text) {
 function drawCanvas() {
     gCanvas = document.querySelector('#canvas');;
     gCtx = gCanvas.getContext('2d');
-    drawImgFromlocal()
 }
 
 function drawImgFromlocal() {
-    var img = new Image()
-    img.src = gImgs[0].url;
+    let img = new Image()
+    let imgs = getgImgs()
+    console.log(imgs);
+    
     img.onload = () => {
         gCtx.drawImage(img, 0, 0, gCanvas.width, gCanvas.height) //img,x,y,xend,yend
     }
+    img.src = imgs.url;
 }
 
 function drawText(text) {
