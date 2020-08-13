@@ -5,7 +5,8 @@ var gCtx;
 function init() {
     drawCanvas()
 }
-function onWriteText(text) {
+function onWriteText(txt) {
+   let text = creategMeme(txt)
     drawText(text)
     
 }
@@ -38,6 +39,7 @@ function drawText(text) {
     gCtx.textAlign = 'center';
     gCtx.fillText(text, gCanvas.width/2 , 6, gCanvas.width);
     gCtx.strokeText(text, gCanvas.width/2 , 6, gCanvas.width);
+
 }
 
 
@@ -53,4 +55,5 @@ function drawButtomText(text) {
     gCtx.textAlign = 'center';
     gCtx.fillText(text, gCanvas.width/2 , gCanvas.height -50 , gCanvas.width);
     gCtx.strokeText(text, gCanvas.width/2 , gCanvas.height -50, gCanvas.width);
+    // creatMeme(text)
 }
